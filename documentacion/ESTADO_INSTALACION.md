@@ -1,5 +1,7 @@
 # Estado de publicación e instalación
 
+[Guía del repositorio](GUIA_REPOSITORIO.md)
+
 Fecha: 25 de octubre de 2026 (Colombia).
 
 - Publicado en la rama `dev-TV`; sin modificar `main`.

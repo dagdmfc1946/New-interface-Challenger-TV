@@ -1,5 +1,7 @@
 # Hardware y sistema del TV consultado
 
+[Guía del repositorio](GUIA_REPOSITORIO.md)
+
 Modelo comercial: Challenger LED 32KG84 BT T2. Fabricante/plataforma reportados por el sistema: KTC, `mountbaker`, Realtek `rtd2841a`. Datos consultados el 25 de octubre de 2026. No se publican identificadores del equipo ni datos de red.
 
 | Característica | Resultado | Fuente |

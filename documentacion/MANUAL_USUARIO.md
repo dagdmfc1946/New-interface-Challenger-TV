@@ -1,10 +1,14 @@
 # Manual de usuario — Challenger Home
 
-La interfaz está instalada. El asistente HOME se activó con autorización explícita; Google TV permanece como HOME de sistema y su pantalla de inicio se redirige a la nueva interfaz. Consulta ASISTENTE_HOME.md para entender el alcance y la reversión. No sustituye el manual del televisor.
+La interfaz está instalada. El asistente HOME se activó con autorización explícita; Google TV permanece como HOME de sistema y su pantalla de inicio se redirige a la nueva interfaz. Consulta [Asistente HOME](ASISTENTE_HOME.md) para entender el alcance y la reversión. No sustituye el manual del televisor.
+
+[Guía del repositorio](GUIA_REPOSITORIO.md) · [Prueba de dos días](PRUEBA_DOS_DIAS.md) · [Advertencias](ADVERTENCIAS_Y_RESPONSABILIDAD.md)
+
+Todos los comandos de este manual se ejecutan desde la raíz del repositorio. Leerlo no requiere conectar ADB.
 
 ## Pantalla de inicio
 
-Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red**, **temporizador** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. La fila principal contiene, en orden: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video.
+Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red**, **temporizador** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. Los seis accesos iniciales son YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video. El orden personal se puede cambiar y se conserva; este manual no lo impone.
 
 Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior; HOME muestra la nueva interfaz mediante el asistente. Al desactivarlo, HOME vuelve a Google TV. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
 
@@ -43,7 +47,7 @@ Este firmware da prioridad a Google TV como inicio de Android. El asistente opci
 
 Se utiliza accesibilidad sin permiso para leer contenido de ventanas, hacer capturas o filtrar teclas. No se solicita ubicación ni escritura de ajustes seguros a la app; la activación inicial se hace desde el PC autorizado. No modifica los botones de voz, volumen, encendido ni las teclas de aplicaciones. Puede haber un breve paso por el inicio original. La verificación con el mando físico sigue siendo necesaria.
 
-Para desactivarlo desde el PC: `scripts/asistente-home.ps1 -TvHost '<ip-del-tv>' -Adb 'adb' -Desactivar`. Para regresar completamente a Google TV usa `scripts/restaurar-inicio.ps1`. También puede deshabilitarse el servicio TVHome en los ajustes de accesibilidad del TV. No se reactiva automáticamente después de una desactivación o detención forzada; abre la app y, si hace falta, usa el script de activación de nuevo. No borres sus datos para intentar repararlo.
+Para desactivarlo desde el PC: `scripts/asistente-home.ps1 -TvHost '<ip-del-tv>' -Adb 'adb' -Desactivar`. Para regresar completamente a Google TV usa `scripts/restaurar-inicio.ps1`. También puede deshabilitarse el servicio Botón Inicio de la app en los ajustes de accesibilidad del TV. No se reactiva automáticamente después de una desactivación o detención forzada; abre la app y, si hace falta, usa el script de activación de nuevo. No borres sus datos para intentar repararlo.
 
 ## Cambiar de fondo
 
@@ -53,7 +57,7 @@ En la configuración del inicio abre **Fondo** y selecciona:
 2. **Digital y microchips · corriente suave:** pequeños pulsos sobre las pistas, aproximadamente 15 fps.
 3. **Digital y microchips · imagen estática:** menor consumo de las tres opciones.
 
-La elección se guarda al salir y debe persistir al reiniciar. Es una comprobación pendiente de la instalación final. No se requiere recompilar para cambiar entre estos tres modos.
+La elección se guarda al salir y debe persistir al reiniciar. La persistencia de cada alternativa, en particular después de reiniciar, sigue pendiente en el ensayo de uso. No se requiere recompilar para cambiar entre estos tres modos.
 
 El video o los pulsos se detienen al abandonar el inicio. No deben continuar consumiendo recursos durante Netflix, YouTube, una entrada HDMI ni el salvapantallas. Si el video falla, se conserva una imagen de respaldo.
 
@@ -61,7 +65,7 @@ El video o los pulsos se detienen al abandonar el inicio. No deben continuar con
 
 Pulsa **Entradas** para elegir HDMI 1 o HDMI 2. Conecta la Xbox o el portátil al HDMI correspondiente. **TV digital** abre la aplicación del sintonizador existente. La antena se conecta al puerto RF habitual; la búsqueda de canales se hace en los ajustes originales del TV.
 
-El launcher no borra canales ni cambia las señales admitidas por el hardware. Antes de la entrega se verificará selección de HDMI, imagen/sonido, regreso con HOME y TDT mediante el mando real.
+El launcher no borra canales ni cambia las señales admitidas por el hardware. La selección física de HDMI, imagen/sonido y TDT se comprueban durante el ensayo de dos días; siguen pendientes hasta registrar el resultado.
 
 ## Mando y comandos de voz
 
@@ -71,7 +75,7 @@ Si la voz deja de responder, comprueba en los ajustes originales que el mando es
 
 ## YouTube y tus playlists
 
-El icono abre YouTube normal. Selecciona tu cuenta y entra en Biblioteca/Playlists dentro de YouTube. No se copian contraseñas ni se consultan listas privadas desde el launcher. Las sesiones de tus aplicaciones se conservan.
+El icono abre YouTube normal. Selecciona tu cuenta y entra en Biblioteca/Playlists dentro de YouTube. No se copian contraseñas ni se consultan listas privadas desde el launcher. La instalación no borra datos de las apps; cada proveedor puede solicitar de nuevo acceso. Netflix mostró un panel de acceso de Google también usando el inicio original; complétalo personalmente si corresponde. En este TV YouTube Music redirige a YouTube.
 
 ## Navegación por Internet
 
@@ -85,15 +89,15 @@ Si una consulta falla muestra el dato guardado con una indicación de falta de a
 
 ## Salvapantallas
 
-Se conservan los salvapantallas y tiempos actuales del sistema. El launcher no activa su reloj de reposo propio, no modifica `screensaver_*` ni mantiene permanentemente la pantalla despierta. Su activación real se comprobará tras instalar.
+Se conservan los salvapantallas y tiempos actuales del sistema. El launcher no activa su reloj de reposo propio, no modifica `screensaver_*` ni mantiene permanentemente la pantalla despierta. La instalación ya terminó; su activación real y salida se comprueban durante el ensayo con el mando.
 
 ## Si notas lentitud
 
-Selecciona primero la imagen estática y compara la navegación. Anota si ocurre solo en Home, en una app, por HDMI o después de volver del salvapantallas. No cambies límites de procesos ni desactives componentes del sistema. Sigue la hoja `PRUEBA_DOS_DIAS.md`.
+Selecciona primero la imagen estática y compara la navegación. Anota si ocurre solo en Home, en una app, por HDMI o después de volver del salvapantallas. No cambies límites de procesos ni desactives componentes del sistema. Sigue la hoja [Prueba dos dias](PRUEBA_DOS_DIAS.md).
 
 ## Volver al inicio original
 
-El inicio de Google TV se deja instalado y habilitado. Puede seleccionarse desde el panel de aplicaciones predeterminadas cuando el firmware lo ofrezca. Si ese panel no está disponible, el script `scripts/restaurar-inicio.ps1` restablece únicamente el componente HOME original mediante ADB; consulta `RECUPERACION.md`. No es necesario restablecer de fábrica.
+El inicio de Google TV se deja instalado y habilitado. Puede seleccionarse desde el panel de aplicaciones predeterminadas cuando el firmware lo ofrezca. Si ese panel no está disponible, el script `scripts/restaurar-inicio.ps1` desactiva el asistente, selecciona y comprueba HOME original mediante ADB; consulta [Recuperacion](RECUPERACION.md). No es necesario restablecer de fábrica.
 
 ## Último ajuste de legibilidad
 

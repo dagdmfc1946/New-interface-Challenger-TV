@@ -1,5 +1,5 @@
 {
-  "checked_files": 264,
+  "checked_files": 267,
   "known_private_values_detected": 0,
   "google_account_emails_detected": 0,
   "full_backups_included": false,
@@ -7,6 +7,9 @@
   "signing_and_adb_keys_included": false,
   "sanitized_backup_zip_inspected": true,
   "git_commit_author": "GitHub noreply",
-  "scanned_files_and_zip_entries": 270,
-  "personal_greeting_published": false
+  "scanned_files_and_zip_entries": 273,
+  "personal_greeting_published": false,
+  "documentation_markdown_files": 19,
+  "documentation_local_links_checked": 164,
+  "documentation_broken_local_links": 0
 }

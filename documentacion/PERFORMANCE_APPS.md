@@ -1,5 +1,7 @@
 # Rendimiento observado de las apps
 
+[Guía del repositorio](GUIA_REPOSITORIO.md)
+
 Ensayo breve del 25 de octubre de 2026, con opción 3 y asistente HOME activo. Hardware: Android TV 11, cuatro núcleos ARM y 1,5 GiB de RAM visible al sistema. No es una certificación de reproducción sostenida.
 
 ## Método
@@ -27,7 +29,7 @@ Durante las seis muestras no había un cliente de video del launcher activo mien
 
 La opción 3 no mantuvo su video reproduciéndose encima de las apps probadas. Hay evidencia para comenzar un ensayo supervisado de uso. Todavía deben comprobarse reproducción real, calidad/DRM, voz, HDMI, antena, suspensión y salvapantallas. Netflix necesita resolver su panel de acceso personalmente. La RAM limitada puede hacer que algunas apps se reinicien al volver; el segundo arranque de Xuper se observó, pero no se ha demostrado su causa.
 
-No se puede afirmar que la opción elegida «sirve por completo» solo con estas aperturas. Completar CHECKLIST_VALIDACION.md y PRUEBA_DOS_DIAS.md. Si aparece lentitud al navegar por Home, comparar con el fondo estático manteniendo lo demás igual.
+No se puede afirmar que la opción elegida «sirve por completo» solo con estas aperturas. Completar [el checklist](CHECKLIST_VALIDACION.md) y [la prueba de dos días](PRUEBA_DOS_DIAS.md). Si aparece lentitud al navegar por Home, comparar con el fondo estático manteniendo lo demás igual.
 
 ## Reproducir la medición
 

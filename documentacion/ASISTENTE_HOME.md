@@ -1,5 +1,7 @@
 # Asistente de HOME: alcance, seguridad y operación
 
+[Guía del repositorio](GUIA_REPOSITORIO.md)
+
 El firmware mantiene Google TV como HOME efectivo, aun al seleccionar otra app mediante los mecanismos estándar de Android. Esta adaptación conserva Google TV habilitado y utiliza un asistente de accesibilidad para redirigir su actividad HOME. La activación fue autorizada explícitamente por el propietario después de explicar alcance y limitaciones.
 
 ## Qué hace esta versión
@@ -13,7 +15,7 @@ Android distingue las capacidades para consultar la jerarquía de pantalla y los
 ## Implicaciones de funcionamiento
 
 - El objetivo es cambiar el destino práctico de HOME; el HOME de sistema sigue siendo Google TV.
-- Se conservan apps, cuentas, TDT, HDMI, voz, mando y salvapantallas. Su comprobación física está en CHECKLIST_VALIDACION.md.
+- Se conservan apps, cuentas, TDT, HDMI, voz, mando y salvapantallas. Su comprobación física está en [el checklist](CHECKLIST_VALIDACION.md).
 - Un error podría producir retornos no deseados al inicio o dejar de redirigir. Ante una regresión, desactivar el asistente y conservar Google TV como ruta de recuperación.
 - Se espera una carga pequeña por los eventos limitados, pero se documentan mediciones reales y no una garantía de consumo nulo.
 - El fondo del launcher se libera al abandonar su actividad; el servicio de HOME permanece a la espera de eventos.
