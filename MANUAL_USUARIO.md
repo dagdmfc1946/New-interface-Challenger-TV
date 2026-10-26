@@ -94,3 +94,7 @@ Selecciona primero la imagen estática y compara la navegación. Anota si ocurre
 ## Volver al inicio original
 
 El inicio de Google TV se deja instalado y habilitado. Puede seleccionarse desde el panel de aplicaciones predeterminadas cuando el firmware lo ofrezca. Si ese panel no está disponible, el script `scripts/restaurar-inicio.ps1` restablece únicamente el componente HOME original mediante ADB; consulta `RECUPERACION.md`. No es necesario restablecer de fábrica.
+
+## Último ajuste de legibilidad
+
+El saludo usa 18 sp y negrilla. El marco de selección mantiene el azul con relleno de aproximadamente 15–20 % de opacidad y un borde visible; los iconos quedan legibles debajo. La tarjeta de Millonarios conserva 330 × 86 dp, con escudo de 68 dp desplazado hacia el texto. Competencia y fuente usan el 74 % del tamaño principal y un tono azul gris claro.

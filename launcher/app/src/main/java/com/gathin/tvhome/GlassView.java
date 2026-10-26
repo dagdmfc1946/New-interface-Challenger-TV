@@ -77,8 +77,8 @@ public class GlassView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        fill.setShader(new LinearGradient(0, 0, 0, h, 0xDD26394D, 0xCC182B40, Shader.TileMode.CLAMP));
-        specular.setShader(new LinearGradient(0, 0, 0, h * 0.45f, 0x66FFFFFF, 0x00FFFFFF, Shader.TileMode.CLAMP));
+        fill.setShader(new LinearGradient(0, 0, 0, h, 0x3326394D, 0x26182B40, Shader.TileMode.CLAMP));
+        specular.setShader(new LinearGradient(0, 0, 0, h * 0.45f, 0x0FFFFFFF, 0x00FFFFFF, Shader.TileMode.CLAMP));
     }
 
     @Override

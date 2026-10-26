@@ -14,3 +14,6 @@ private/
 !launcher/app/src/main/assets/video3.mp4
 *.aesgcm
 *clave*.json
+
+__pycache__/
+*.pyc

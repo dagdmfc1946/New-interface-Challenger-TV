@@ -5,8 +5,8 @@
   "skipped": 0,
   "suites": 42,
   "lint_errors": 0,
-  "lint_warnings": 92,
-  "apk_bytes": 9339350,
-  "apk_sha256": "d095cbbae52f3cc74ebb20fe228659996109d4e9de6545a176847355d9a1f938",
-  "runtime_tv_validation": "Actualización visual instalada y observada; saludo local persistente, temporizador nativo y hash comprobados. Asistente HOME sin activar, permiso explícito pendiente."
+  "lint_warnings": 93,
+  "apk_bytes": 9339426,
+  "apk_sha256": "c4363b602e50f0e7a6bc35ae2377d2c3c2328aad55e7bc9ddba32887f26914db",
+  "runtime_tv_validation": "Último ajuste de legibilidad compilado; activación HOME autorizada explícitamente y medición por apps pendiente."
 }

@@ -36,3 +36,5 @@ Se habilita el menú de las apps para acceder a «Mover» y guardar su orden. Se
 El botón de temporizador es un acceso nuevo al panel original del firmware, no un temporizador implementado por el launcher. Se ubica entre red y Ajustes. El saludo en español ahora usa el horario colombiano y cambia a noche a las 18:00, incluso si el TV usa es-ES. Se mantienen la hora, el idioma y los temporizadores globales del sistema.
 
 La fila amplía los iconos del 62 % al 76 % de la altura de la tarjeta y recorta sus esquinas con radio de 8 dp; no se añaden copias de logotipos ni fondos azules permanentes. El saludo admite un nombre editable, guardado exclusivamente en preferencias locales (`challenger_profile`), separado de la configuración pública. El valor público inicial permanece vacío.
+
+Ajuste solicitado de legibilidad: saludo de 18 sp en negrilla; selección azul translúcida (15–20 % de opacidad); escudo de 68 dp, más próximo al texto, dentro de la misma tarjeta de 330 × 86 dp. Competencia y fuente quedan menores y en azul gris claro. No se añadió una animación ni una consulta de red por estos cambios.
