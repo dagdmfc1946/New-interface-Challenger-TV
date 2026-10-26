@@ -18,6 +18,10 @@ Para configurar la interfaz, mantén OK sobre Ajustes y entra en la opción de c
 
 El saludo en español sigue el horario de Colombia: Buenos días de 05:00 a 11:59, Buenas tardes de 12:00 a 17:59 y Buenas noches de 18:00 a 04:59. No modifica el idioma ni la zona horaria del sistema.
 
+Para personalizar el saludo, mantén OK sobre Ajustes y abre la configuración del inicio. En **Nombre para el saludo**, introduce el nombre deseado y confirma. Se guarda solo en las preferencias privadas del TV; no se incluye en el repositorio ni en el respaldo técnico público. En español se muestra «¡Buenas noches, [nombre]!» según la franja horaria. Deja el campo vacío para mostrar solo el saludo.
+
+Los iconos de la fila conservan su imagen original, con tamaño ampliado y un recorte suave de esquinas. El único fondo azul de selección sigue al foco.
+
 ## Temporizador de apagado
 
 El botón con icono de temporizador, entre Wi-Fi y Ajustes, abre el panel original **Tiempo de dormir** del TV. Elige allí el intervalo deseado y confirma con OK. El launcher no crea una alarma ni decide el apagado: lo gestiona el sistema del televisor, igual que antes. Abrir el panel por sí solo no programa ningún tiempo.

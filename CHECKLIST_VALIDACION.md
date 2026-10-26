@@ -15,6 +15,7 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 
 - [ ] HOME desde otra app muestra la nueva interfaz; repetir cinco veces y desde Ajustes, HDMI y TDT. Distinguir el ensayo ADB de la prueba con el mando real.
 - [ ] Mantener posiciones del reloj/fecha y botones; fila principal con seis apps y sus iconos originales.
+- [ ] Iconos ampliados y redondeados, con logotipos legibles; nombre del saludo guardado localmente y conservado al reabrir.
 - [ ] Solo un elemento enfocado tiene resaltado azul; logotipos de las apps conservan sus colores propios.
 - [ ] Flechas, OK y Atrás no dejan focos invisibles ni impiden llegar a Entradas, red, Ajustes y biblioteca.
 - [ ] Mantener OK sobre una app abre su menú; «Mover» permite desplazarla, soltar con OK y guardar con Atrás.

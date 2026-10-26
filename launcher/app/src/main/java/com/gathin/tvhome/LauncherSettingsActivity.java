@@ -49,6 +49,19 @@ public final class LauncherSettingsActivity extends Activity {
         setContentView(R.layout.activity_launcher_settings);
         choices = getSharedPreferences(Config.SETTINGS_NAME, MODE_PRIVATE);
         Config config = Config.load(this);
+        findViewById(R.id.greetingNameChoice).setOnClickListener(v -> {
+            SharedPreferences profile = getSharedPreferences("challenger_profile", MODE_PRIVATE);
+            android.widget.EditText input = new android.widget.EditText(this);
+            input.setSingleLine(true);
+            input.setFilters(new android.text.InputFilter[]{new android.text.InputFilter.LengthFilter(32)});
+            input.setText(profile.getString("name", ""));
+            input.setSelection(input.length());
+            new AlertDialog.Builder(this).setTitle(R.string.greeting_name_choice).setView(input)
+                    .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                        profile.edit().putString("name", input.getText().toString().trim()).apply();
+                        changed();
+                    }).setNegativeButton(android.R.string.cancel, null).show();
+        });
         View reorderChoice = findViewById(R.id.reorderChoice);
         reorderChoice.setVisibility(config.launcherSettingsButton ? View.VISIBLE : View.GONE);
         reorderChoice.setOnClickListener(v -> {

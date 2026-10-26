@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="sleep_timer_shortcut">Temporizador de apagado</string>
+    <string name="greeting_name_choice">Nombre para el saludo</string>
 </resources>

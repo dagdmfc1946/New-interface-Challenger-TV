@@ -6,7 +6,7 @@
   "suites": 42,
   "lint_errors": 0,
   "lint_warnings": 92,
-  "apk_bytes": 9338538,
-  "apk_sha256": "c5a4da0b2c9528a2326f2c22c4dc230e9bab20108a2c88ae35bd080581bfd267",
-  "runtime_tv_validation": "Saludo colombiano, escudo ajustado, Mover primero y acceso a temporizador: compilados. Asistente HOME sin activar."
+  "apk_bytes": 9339350,
+  "apk_sha256": "d095cbbae52f3cc74ebb20fe228659996109d4e9de6545a176847355d9a1f938",
+  "runtime_tv_validation": "Temporizador y saludo nocturno comprobados. Iconos ampliados/redondeados y perfil local de saludo compilados; asistente HOME sin activar."
 }

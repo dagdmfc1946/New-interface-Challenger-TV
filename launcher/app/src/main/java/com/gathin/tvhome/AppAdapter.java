@@ -425,6 +425,12 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             iconLp.width = iconLp.height = Math.round(h * ICON_SHARE);
             iconLp.bottomMargin = 0;
             icon.setLayoutParams(iconLp);
+            icon.setOutlineProvider(new ViewOutlineProvider() {
+                @Override public void getOutline(View view, Outline outline) {
+                    outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), 8 * density);
+                }
+            });
+            icon.setClipToOutline(true);
         }
         return new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot);
     }
@@ -652,7 +658,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     /** Share of the tile height the icon takes in uniform_tiles mode (onCreateViewHolder). */
-    private static final float ICON_SHARE = 0.62f;
+    private static final float ICON_SHARE = 0.76f;
 
     /**
      * The colour covering most of an icon, for a card that should read as that app: a small saturated badge
