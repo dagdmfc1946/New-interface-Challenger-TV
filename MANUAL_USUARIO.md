@@ -1,14 +1,14 @@
 # Manual de usuario — Challenger Home
 
-Este manual describe la candidata preparada. La instalación y las pruebas funcionales del launcher integrado siguen pendientes de aprobación. No sustituye el manual del televisor.
+La interfaz está instalada. Este firmware mantiene Google TV como HOME efectivo; por ahora abre la nueva interfaz desde TVHome en las aplicaciones. La integración definitiva del botón HOME sigue pendiente. No sustituye el manual del televisor.
 
 ## Pantalla de inicio
 
 Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. La fila principal contiene, en orden: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video.
 
-Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior y HOME regresa al inicio. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
+Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior; por ahora HOME regresa al inicio original de Google TV. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
 
-La biblioteca ofrece el resto de aplicaciones; ocultar un icono no desinstala la aplicación. Los menús de fábrica no deben utilizarse.
+Desplázate a la derecha en la fila para encontrar las demás aplicaciones y la biblioteca; ocultar un icono no desinstala la aplicación. Los menús de fábrica no deben utilizarse.
 
 ## Configuración del TV: sigue disponible
 
@@ -52,7 +52,7 @@ La consulta estándar de enlaces web no confirmó un navegador completo instalad
 
 La tarjeta muestra el próximo partido disponible, rival, competencia y hora de Colombia. Consulta la agenda pública enlazada por la página oficial del club, sin acceder a tu cuenta. Como máximo intenta actualizar cada seis horas mientras el inicio está visible; si falla, espera al menos treinta minutos antes de otro intento.
 
-Si una consulta falla muestra el dato guardado con una indicación de falta de actualización. No detecta inmediatamente cada pérdida de conexión mientras la caché sigue vigente. Sin una fecha futura fiable muestra **Programación por confirmar**. No es un marcador en vivo ni garantiza cambios de última hora; confirma la programación oficial antes de organizarte. La tarjeta integrada y su consumo todavía deben validarse en el TV.
+Si una consulta falla muestra el dato guardado con una indicación de falta de actualización. No detecta inmediatamente cada pérdida de conexión mientras la caché sigue vigente. Sin una fecha futura fiable muestra **Programación por confirmar**. No es un marcador en vivo ni garantiza cambios de última hora; confirma la programación oficial antes de organizarte. La tarjeta integrada mostró un próximo partido en el TV; la programación depende de la fuente pública.
 
 ## Salvapantallas
 

@@ -7,9 +7,10 @@
 - [x] Foco único e iconos originales configurados.
 - [x] Vista previa de candidata disponible para aprobación (fotograma en opción 3; pulsos simulados en la alternativa).
 - [x] MANUAL_USUARIO.md, cambios, recuperación y publicación preparados.
-- [ ] Aprobación de apariencia por el usuario.
-- [ ] Instalación/activación de candidata definitiva.
+- [x] Aprobación de apariencia por el usuario.
+- [x] Instalación de candidata definitiva.
+- [ ] Integración de HOME: firmware conserva Google TV; asistente opcional pendiente.
 - [ ] Validación con mando, voz, HDMI, TDT, apps y salvapantallas.
 - [ ] Prueba de uso de dos días.
 
-GitHub: solo preparación local; todavía no se publica ni crea un repositorio remoto.
+GitHub: publicado en dev-TV; respaldo completo privado excluido.

@@ -14,8 +14,8 @@ if($Activar){
     & $Adb -s $serial shell 'cmd package set-home-activity --user 0 local.challenger.home/com.gathin.tvhome.MainActivity'
     if($LASTEXITCODE -ne 0){throw 'No se pudo activar; ejecutar restaurar-inicio.ps1'}
     & $Adb -s $serial shell 'input keyevent KEYCODE_HOME'
-    $home=(& $Adb -s $serial shell 'cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME') -join "`n"
+    $resolvedHome=(& $Adb -s $serial shell 'cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME') -join "`n"
     $activity=(& $Adb -s $serial shell 'dumpsys activity activities') -join "`n"
-    if($home -notmatch 'local.challenger.home/' -or $activity -notmatch '(topResumedActivity|mResumedActivity|mFocusedApp)[^\r\n]*local.challenger.home/'){& (Join-Path $PSScriptRoot 'restaurar-inicio.ps1') -TvHost $TvHost -Adb $Adb;throw 'No se confirmó HOME visible de la candidata; se solicitó restauración'}
+    if($resolvedHome -notmatch 'local.challenger.home/' -or $activity -notmatch '(topResumedActivity|mResumedActivity|mFocusedApp)[^\r\n]*local.challenger.home/'){& (Join-Path $PSScriptRoot 'restaurar-inicio.ps1') -TvHost $TvHost -Adb $Adb;throw 'No se confirmó HOME visible de la candidata; se solicitó restauración'}
 }
 Write-Output 'Google TV sigue instalado y habilitado. Falta verificar los botones reales, voz, TDT, HDMI y salvapantallas.'

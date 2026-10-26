@@ -35,3 +35,11 @@ El permiso de Internet se añade solo para la agenda deportiva, con lectura limi
 - Cambiar entre tres fondos, volver desde apps y reiniciar para comprobar persistencia.
 - Confirmar pausa del fondo y salvapantallas originales, sin cambiar sus tiempos.
 - Completar la prueba de dos días y registrar cualquier incidencia.
+
+## Instalación real de la candidata integrada
+
+La opción 3 se abrió con seis favoritas en una fila inferior y tarjeta de Millonarios con datos. Sesión de tres muestras de aproximadamente diez segundos: CPU total del equipo 7,26 %, 13,47 % y 7,18 % (mediana 7,26 %). PSS del proceso: 37.102 KiB; navegación: 27 cuadros UI registrados y 0 % lentos. La medición de CPU del proceso tuvo resolución insuficiente (0,0 %); no significa consumo nulo. Sesión breve, sin atribuir una mejora garantizada ni certificar reproducción de todas las apps.
+
+El reproductor usó el decodificador Realtek y una captura inicial registró 568 cuadros sin pérdidas. Se conservaron los ajustes protegidos y los paquetes deshabilitados. El firmware sigue resolviendo HOME a Google TV pese a dos mecanismos estándar; no se deshabilitó ningún componente para eludirlo. La sustitución definitiva de HOME queda pendiente de decidir y validar un asistente opcional.
+
+El intento de activación detectó un error de PowerShell por usar `$home`, variable reservada. Se corrigieron instalación y recuperación a `$resolvedHome`; ese fallo no alteró paquetes ni datos. La selección efectiva de HOME se comprobó después directamente.
