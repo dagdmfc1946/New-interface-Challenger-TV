@@ -4,7 +4,7 @@ La interfaz está instalada. Este firmware mantiene Google TV como HOME efectivo
 
 ## Pantalla de inicio
 
-Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. La fila principal contiene, en orden: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video.
+Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red**, **temporizador** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. La fila principal contiene, en orden: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video.
 
 Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior; por ahora HOME regresa al inicio original de Google TV. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
 
@@ -16,10 +16,18 @@ Pulsa **Ajustes** normalmente para abrir la configuración original de Android/G
 
 Para configurar la interfaz, mantén OK sobre Ajustes y entra en la opción de configuración del inicio/launcher. El texto exacto depende del idioma del sistema. No confundas este menú con Ajustes del TV.
 
+El saludo en español sigue el horario de Colombia: Buenos días de 05:00 a 11:59, Buenas tardes de 12:00 a 17:59 y Buenas noches de 18:00 a 04:59. No modifica el idioma ni la zona horaria del sistema.
+
+## Temporizador de apagado
+
+El botón con icono de temporizador, entre Wi-Fi y Ajustes, abre el panel original **Tiempo de dormir** del TV. Elige allí el intervalo deseado y confirma con OK. El launcher no crea una alarma ni decide el apagado: lo gestiona el sistema del televisor, igual que antes. Abrir el panel por sí solo no programa ningún tiempo.
+
+Para cancelar o cambiar el temporizador, vuelve al mismo panel y usa su opción de desactivación o el intervalo deseado. En la prueba técnica solo se abrió el panel; el apagado real a la hora elegida queda como prueba supervisada del propietario. Si otro firmware no ofrece esta acción, se oculta el acceso.
+
 ## Reordenar aplicaciones
 
 1. Selecciona una app con las flechas y mantén **OK** para abrir su menú. Si el mando tiene botón Menú, también puedes usarlo.
-2. Selecciona **Mover**.
+2. Selecciona **Mover**, la primera opción.
 3. Usa izquierda/derecha para colocarla en la posición deseada.
 4. Pulsa **OK** para soltarla y **Atrás** para terminar y guardar.
 
@@ -67,7 +75,7 @@ La consulta estándar de enlaces web no confirmó un navegador completo instalad
 
 ## Millonarios FC
 
-La tarjeta muestra el próximo partido disponible, rival, competencia y hora de Colombia, con el escudo a la derecha. El escudo está incluido localmente, sin animación ni descargas periódicas. Consulta la agenda pública enlazada por la página oficial del club, sin acceder a tu cuenta. Como máximo intenta actualizar cada seis horas mientras el inicio está visible; si falla, espera al menos treinta minutos antes de otro intento.
+La tarjeta muestra el próximo partido disponible, rival, competencia y hora de Colombia, con el escudo a la derecha. El escudo está incluido localmente, sin animación ni descargas periódicas. La línea de competencia y fuente usa un tamaño menor que el rival, la fecha y la hora. Consulta la agenda pública enlazada por la página oficial del club, sin acceder a tu cuenta. Como máximo intenta actualizar cada seis horas mientras el inicio está visible; si falla, espera al menos treinta minutos antes de otro intento.
 
 Si una consulta falla muestra el dato guardado con una indicación de falta de actualización. No detecta inmediatamente cada pérdida de conexión mientras la caché sigue vigente. Sin una fecha futura fiable muestra **Programación por confirmar**. No es un marcador en vivo ni garantiza cambios de última hora; confirma la programación oficial antes de organizarte. La tarjeta integrada mostró un próximo partido en el TV; la programación depende de la fuente pública.
 

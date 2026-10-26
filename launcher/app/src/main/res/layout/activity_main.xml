@@ -340,6 +340,13 @@
                     android:nextFocusDown="@+id/grid" />
 
                 <TextView
+                    android:id="@+id/btnSleepTimer"
+                    style="@style/TopButtonIcon"
+                    android:contentDescription="@string/sleep_timer_shortcut"
+                    android:drawableStart="@drawable/ic_sleep_timer"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
                     android:id="@+id/btnVpn"
                     style="@style/TopButton"
                     android:visibility="gone"

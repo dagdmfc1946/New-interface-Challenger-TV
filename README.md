@@ -9,7 +9,7 @@ Adaptación personal de [cleanyourtv](https://github.com/Gathin23/cleanyourtv), 
 - Principal: opción 3, video local de placa electrónica, 720p/30 fps, silencioso.
 - Alternativas: Digital y microchips con corriente suave (~15 fps), y la misma imagen estática.
 - Seis apps: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video. Se usan sus iconos de Android, no copias incluidas en el repositorio.
-- Solo la app enfocada tiene resaltado azul. Saludo/reloj/fecha a la izquierda; Entradas/red/Ajustes a la derecha.
+- Solo la app enfocada tiene resaltado azul. Saludo/reloj/fecha a la izquierda; Entradas/red/temporizador/Ajustes a la derecha.
 - Ajustes conserva el panel original del TV. El menú propio permite cambiar fondos; mantener OK sobre una app permite moverla.
 - Tarjeta de Millonarios FC debajo de los botones: agenda del club, hora de Colombia, caché, sin sondeo continuo.
 - Se conservan TDT, HDMI, voz, Bluetooth/infrarrojos, duplicación, Play Store, actualizaciones y salvapantallas existentes.
@@ -38,3 +38,7 @@ Requisitos: JDK 17, Android SDK platform 34, build-tools 34.0.0, ADB y un video 
 Se incluye la copia optimizada de la opción 3 aportada por el propietario y su fotograma, sin metadatos personales. No se declara ese video bajo MIT ni se establece una licencia general de redistribución sobre él. El dibujo procedural y sus pistas acompañan al código. Las marcas e iconos pertenecen a sus titulares y se consultan en las apps instaladas. Se conserva la licencia MIT original en `UPSTREAM-LICENSE`.
 
 El script de instalación no desactiva el inicio original ni paquetes del sistema. La carpeta `respaldo/` contiene solo una copia técnica anonimizada; el respaldo completo, cuentas, identificadores y claves permanecen fuera de GitHub.
+
+### Prueba aislada del script de accesibilidad
+
+Ejecuta `./tests/Test-AsistenteHome.ps1` para probar su manejo de listas con un ADB simulado. Esta prueba no contacta el TV ni habilita servicios. La activación real es una operación separada y requiere autorización del propietario.

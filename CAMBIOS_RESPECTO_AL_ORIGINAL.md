@@ -32,3 +32,5 @@ El launcher definitivo no ha sustituido HOME. Las pruebas de rendimiento previas
 El propietario autorizó preparar la integración necesaria tras comprobar que HOME continuaba abriendo Google TV. Se configura `HomeKeyService` para observar exclusivamente cambios de ventana de Google TV y redirigir solo sus actividades HOME. Se desactiva el filtrado de teclas y la recuperación automática del servicio. El permiso de accesibilidad es un cambio explícito respecto al estado original; voz, salvapantallas y demás servicios deben conservarse.
 
 Se habilita el menú de las apps para acceder a «Mover» y guardar su orden. Se añade una imagen local estática del escudo a la derecha de la agenda; la tarjeta se amplía hacia la izquierda, conservando su anclaje superior derecho. No se cambia la posición del reloj ni de los botones.
+
+El botón de temporizador es un acceso nuevo al panel original del firmware, no un temporizador implementado por el launcher. Se ubica entre red y Ajustes. El saludo en español ahora usa el horario colombiano y cambia a noche a las 18:00, incluso si el TV usa es-ES. Se mantienen la hora, el idioma y los temporizadores globales del sistema.

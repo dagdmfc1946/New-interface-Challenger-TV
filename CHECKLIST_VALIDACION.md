@@ -18,8 +18,9 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [ ] Solo un elemento enfocado tiene resaltado azul; logotipos de las apps conservan sus colores propios.
 - [ ] Flechas, OK y Atrás no dejan focos invisibles ni impiden llegar a Entradas, red, Ajustes y biblioteca.
 - [ ] Mantener OK sobre una app abre su menú; «Mover» permite desplazarla, soltar con OK y guardar con Atrás.
-- [ ] Reordenar dos apps, cerrar/abrir el launcher y comprobar persistencia; restaurar el orden original al terminar la prueba técnica.
+- [x] Reordenar dos apps, cerrar/abrir el launcher y comprobar persistencia mediante ADB. El propietario también confirmó que pudo reorganizar. Conservar su orden guardado.
 - [ ] Repetir persistencia del orden y fondo después de reiniciar completamente el TV.
+- [ ] Verificar saludo nocturno desde las 18:00 de Colombia y transiciones de mañana/tarde, incluso con idioma es-ES.
 - [ ] Verificar que el escudo está a la derecha del texto del partido, legible y sin cortar rival, fecha, hora ni competencia.
 
 ## 3. Funciones originales: comprobación física obligatoria
@@ -40,6 +41,8 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [ ] Duplicación/Chromecast: enviar contenido desde el dispositivo habitual y comprobar que el inicio no lo interrumpe.
 - [ ] Navegador: abrir uno ya instalado si existe; si no existe, registrar que no se ha instalado uno y que Play Store permanece accesible.
 - [ ] Play Store, actualizaciones del TV y conexión de red siguen disponibles.
+- [ ] Botón temporizador entre Wi-Fi y Ajustes abre Tiempo de dormir; Atrás lo cierra sin programar apagado.
+- [ ] En una sesión supervisada, elegir un intervalo del temporizador y comprobar apagado real; encender y verificar funciones habituales. No programarlo durante otras pruebas.
 
 ## 4. Asistente de HOME: alcance y reversión
 

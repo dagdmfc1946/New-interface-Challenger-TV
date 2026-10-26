@@ -1,12 +1,12 @@
 {
-  "tests": 263,
+  "tests": 267,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
-  "suites": 41,
+  "suites": 42,
   "lint_errors": 0,
-  "lint_warnings": 91,
-  "apk_bytes": 9337350,
-  "apk_sha256": "d1043fb4dfd289d813d59d735b4ce75f2d3d44573dd0efc5648bf3746d9981c8",
-  "runtime_tv_validation": "Actualización con escudo, Mover y asistente HOME restringido: preparada; instalación y pruebas siguientes."
+  "lint_warnings": 92,
+  "apk_bytes": 9338538,
+  "apk_sha256": "c5a4da0b2c9528a2326f2c22c4dc230e9bab20108a2c88ae35bd080581bfd267",
+  "runtime_tv_validation": "Saludo colombiano, escudo ajustado, Mover primero y acceso a temporizador: compilados. Asistente HOME sin activar."
 }

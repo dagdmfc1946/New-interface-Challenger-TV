@@ -704,6 +704,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
         btnInputs = findViewById(R.id.btnInputs);
         View btnSettings = findViewById(R.id.btnSettings);
+        View btnSleepTimer = findViewById(R.id.btnSleepTimer);
+        Intent sleepTimer = new Intent("android.tv.settings.SLEEP_TIMER_HOT_KEY").setPackage("com.android.tv.settings");
+        btnSleepTimer.setVisibility(sleepTimer.resolveActivity(getPackageManager()) != null ? View.VISIBLE : View.GONE);
+        btnSleepTimer.setOnClickListener(v -> open(new Intent(sleepTimer)));
         btnInputs.setOnClickListener(v -> showInputs());
         btnWifi.setOnClickListener(v -> openNetworkPill());
         btnVpn.setOnClickListener(v -> openVpnPill());
@@ -793,13 +797,14 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         };
         btnInputs.setOnKeyListener(pillKeys);
         btnWifi.setOnKeyListener(pillKeys);
+        btnSleepTimer.setOnKeyListener(pillKeys);
         btnVpn.setOnKeyListener(pillKeys);
         btnSettings.setOnKeyListener(pillKeys);
         btnReorder.setOnKeyListener(pillKeys);
         btnLibraryTop.setOnKeyListener(pillKeys);
         for (View button : topAppButtons) button.setOnKeyListener(pillKeys);
         if (advancedEffects) {
-            List<View> pills = new ArrayList<>(Arrays.asList(btnInputs, btnWifi, btnVpn, btnReorder, btnLibraryTop, btnSettings));
+            List<View> pills = new ArrayList<>(Arrays.asList(btnInputs, btnWifi, btnSleepTimer, btnVpn, btnReorder, btnLibraryTop, btnSettings));
             pills.addAll(topAppButtons);
             for (View button : pills) {
                 button.setOnFocusChangeListener((view, focused) -> view.animate()
@@ -2480,18 +2485,17 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         int res;
         // Locale-specific day parts (app language on Android 13+).
         // Indonesian: Pagi 00-10, Siang 10-15, Sore 15-18, Malam 18-24.
-        // Spain (es-ES) and Catalan: "Buenas tardes" into the evening; "Buenas noches" from 21.
-        // Latin American Spanish (es-MX, es-AR, …) keeps the default hours: evening strings are also
-        // «Buenas noches», and there «Buenas noches» from ~17 matches local use better than Spain's 21.
+        // This Colombian adaptation uses local day parts even when the TV language is es-ES.
         Locale locale = getResources().getConfiguration().getLocales().get(0);
         String lang = locale.getLanguage();
-        String country = locale.getCountry();
-        if ("in".equals(lang) || "id".equals(lang)) {
+        if ("es".equals(lang)) {
+            res = ColombiaGreeting.resourceAt(java.time.Instant.now());
+        } else if ("in".equals(lang) || "id".equals(lang)) {
             if (hour < 10) res = R.string.good_morning;
             else if (hour < 15) res = R.string.good_afternoon;
             else if (hour < 18) res = R.string.good_evening;
             else res = R.string.good_night;
-        } else if (("es".equals(lang) && "ES".equals(country)) || "ca".equals(lang)) {
+        } else if ("ca".equals(lang)) {
             if (hour < 6) res = R.string.good_night;
             else if (hour < 12) res = R.string.good_morning;
             else if (hour < 21) res = R.string.good_afternoon;
@@ -3290,11 +3294,6 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         View panel = getLayoutInflater().inflate(R.layout.popup_inputs, root, false);
         LinearLayout rows = panel.findViewById(R.id.rows);
         PopupWindow popup = glassPopup(panel, (int) (200 * density));
-        if (dockRow && position < adapter.movableCount()) {
-            boolean inDock = position < COLUMNS;
-            addSettingsMenuRow(rows, popup, inDock ? R.string.tile_replace_in_dock : R.string.tile_add_to_dock,
-                    () -> startDockEditFor(key, inDock));
-        }
         if (position < adapter.movableCount()) addSettingsMenuRow(rows, popup, R.string.tile_move, () -> {
             if (!beginReorder()) return;
             int at = adapter.positionOf(key);   // beginReorder can rebuild the tiles
@@ -3303,6 +3302,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             pickUp(at);
             Toast.makeText(this, R.string.reorder_hint, Toast.LENGTH_LONG).show();
         });
+        if (dockRow && position < adapter.movableCount()) {
+            boolean inDock = position < COLUMNS;
+            addSettingsMenuRow(rows, popup, inDock ? R.string.tile_replace_in_dock : R.string.tile_add_to_dock,
+                    () -> startDockEditFor(key, inDock));
+        }
         if (appLibraryEnabled) addSettingsMenuRow(rows, popup, R.string.library_remove_shortcut, () -> {
             if (LibraryApps.save(this, pkg, false)) reloadApps(false);
             else Toast.makeText(this, R.string.library_save_failed, Toast.LENGTH_LONG).show();
