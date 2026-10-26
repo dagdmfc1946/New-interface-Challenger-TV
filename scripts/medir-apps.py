@@ -42,7 +42,7 @@ def main():
    ret=home();time.sleep(1);warm=sh('am start -W -n '+component);(out/(pkg+'-warm.txt')).write_text(warm,encoding='utf-8');time.sleep(2);ret2=home()
    def value(raw,key):
     m=re.search(r'^'+key+r':\s*(.+)$',raw,re.M);return m.group(1).strip() if m else None
-   result={'app':label,'cold_total_ms':value(cold,'TotalTime'),'cold_state':value(cold,'LaunchState'),'cold_status':value(cold,'Status'),'warm_total_ms':value(warm,'TotalTime'),'warm_state':value(warm,'LaunchState'),'device_cpu_median_pct':statistics.median(x['device_cpu_pct'] for x in samples),'launcher_background_cpu_max_pct':max((x['launcher_cpu_pct_all_cores'] for x in samples if x['launcher_cpu_pct_all_cores'] is not None),default=None),'pss_kib':pss,'app_foreground_confirmed':fg==pkg,'launcher_video_active_while_app_visible':home_video_active,'home_returns_seconds':[ret,ret2],'samples':samples}
+   result={'app':label,'cold_total_ms':value(cold,'TotalTime'),'cold_state':value(cold,'LaunchState'),'cold_status':value(cold,'Status'),'warm_total_ms':value(warm,'TotalTime'),'warm_state':value(warm,'LaunchState'),'device_cpu_median_pct':statistics.median(x['device_cpu_pct'] for x in samples),'launcher_background_cpu_max_pct':max((x['launcher_cpu_pct_all_cores'] for x in samples if x['launcher_cpu_pct_all_cores'] is not None),default=None),'pss_kib':pss,'app_foreground_confirmed':fg==pkg,'foreground_package':fg,'launcher_video_active_while_app_visible':home_video_active,'home_returns_seconds':[ret,ret2],'samples':samples}
    results.append(result);(out/'summary.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(result,ensure_ascii=False),flush=True)
  finally:
   sh('input keyevent KEYCODE_HOME')

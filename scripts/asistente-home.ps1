@@ -32,4 +32,9 @@ $observed=Invoke-AdbShell @('settings','--user','0','get','secure','enabled_acce
 $present=@($observed.Split(':')) -contains $service
 if(($Desactivar -and $present) -or (-not $Desactivar -and -not $present)){throw 'No se confirmó el estado solicitado del asistente'}
 if($Desactivar){Write-Output 'Asistente HOME desactivado; otros servicios conservados.'}
-else{Write-Output 'Asistente HOME habilitado; verificar servicio enlazado y HOME real. No se concedieron permisos adicionales a la app.'}
+else{
+    # Google TV may already be visible when the service binds: HOME alone then emits no window change.
+    $launch=Invoke-AdbShell @('am','start','-W','-n','local.challenger.home/com.gathin.tvhome.MainActivity')
+    if($launch -notmatch 'Status: ok'){throw 'Asistente habilitado, pero no se confirmó apertura; usar restaurar-inicio.ps1'}
+    Write-Output 'Asistente HOME habilitado y nueva interfaz abierta. No se concedieron ubicación ni escritura de ajustes seguros a la app.'
+}

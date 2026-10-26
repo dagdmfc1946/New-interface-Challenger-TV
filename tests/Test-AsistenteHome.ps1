@@ -1,10 +1,12 @@
 $ErrorActionPreference='Stop'
 $global:MockServices='org.example.reader/.ReaderService'
 $global:MockAccessibility='1'
+$global:MockLaunches=0
 function Mock-Adb {
  param([string]$s,[Parameter(ValueFromRemainingArguments=$true)][string[]]$Rest)
  $global:LASTEXITCODE=0
  if($s -eq 'connect'){return 'offline test'}
+ if($Rest[0] -eq 'shell' -and $Rest[1] -eq 'am'){$global:MockLaunches++;return 'Status: ok'}
  if($Rest[0] -ne 'shell' -or $Rest[1] -ne 'settings'){throw 'Unexpected mock command'}
  $verb=$Rest[4]; $key=$Rest[6]
  if($verb -eq 'get'){if($key -eq 'enabled_accessibility_services'){return $global:MockServices};return $global:MockAccessibility}
@@ -14,6 +16,7 @@ function Mock-Adb {
 }
 $script=Join-Path (Split-Path $PSScriptRoot -Parent) 'scripts/asistente-home.ps1'
 & $script -TvHost 'offline' -Adb 'Mock-Adb' | Out-Null
+if($global:MockLaunches -ne 1){throw 'La activación debe abrir el inicio para no esperar un evento de ventana ya visible'}
 if($global:MockServices -ne 'org.example.reader/.ReaderService:local.challenger.home/com.gathin.tvhome.HomeKeyService'){throw 'No conserva el servicio previo'}
 & $script -TvHost 'offline' -Adb 'Mock-Adb' | Out-Null
 if(($global:MockServices.Split(':') | Where-Object {$_ -eq 'local.challenger.home/com.gathin.tvhome.HomeKeyService'}).Count -ne 1){throw 'Duplicación'}

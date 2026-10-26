@@ -187,7 +187,6 @@
                     android:textSize="18sp"
                     android:fontFamily="@string/font_body"
                     android:textStyle="bold"
-                    android:fontVariationSettings="'wght' 700"
                     android:letterSpacing="0.04"
                     android:textAllCaps="false" />
 

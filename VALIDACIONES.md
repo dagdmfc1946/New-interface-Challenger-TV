@@ -71,3 +71,11 @@ Se observó el saludo de noche y su nombre configurable, guardado solo en prefer
 El botón de temporizador abrió la actividad nativa desde la interfaz y Atrás la cerró. Durante ese panel desapareció el cliente del reproductor local en `dumpsys media.player`; antes del panel usaba el decodificador Realtek. No se programó apagado. El orden personal de apps se conserva tras la actualización. El propietario confirmó el reordenamiento con su mando.
 
 El asistente HOME sigue desactivado. Preparación, pruebas simuladas y compilación no equivalen a activación ni a validación del servicio real. No se marca HOME, voz, TDT, HDMI, salvapantallas o ensayo de dos días como aprobados por estos cambios visuales.
+
+## HOME autorizado y rendimiento de apps
+
+Tras autorización explícita, se activó HomeKeyService sin conceder a la app ubicación ni escritura de ajustes seguros. El servicio enlazado reportó `capabilities=0`, eventos `TYPE_WINDOW_STATE_CHANGED` y timeout de 100 ms. La primera pulsación ADB de HOME y doce regresos desde las seis apps mostraron la nueva interfaz. No se deshabilitó Google TV.
+
+Los resultados de apertura, CPU y PSS están en PERFORMANCE_APPS.md. Netflix llegó a una actividad de acceso asistido de Google; no se introdujeron credenciales. YouTube Music redirigió a YouTube. No se confunden esos casos con apps listas para reproducir. El video del launcher no permaneció activo durante las muestras de las apps y no se detectó CPU de su proceso en esas ventanas. Se mantienen pendientes reproducción prolongada y pruebas físicas.
+
+Se corrigió también la presencia del temporizador en una variante heredada de layout y se usa negrilla estándar sin atributo dependiente de Android 9; no se cambió el idioma del TV ni la disposición española elegida. Las verificaciones finales y el hash corresponden a VERIFICACION_COMPILACION.json.

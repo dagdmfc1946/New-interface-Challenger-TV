@@ -1,12 +1,12 @@
 # Manual de usuario — Challenger Home
 
-La interfaz está instalada. Este firmware mantiene Google TV como HOME efectivo; por ahora abre la nueva interfaz desde TVHome en las aplicaciones. La integración definitiva del botón HOME sigue pendiente. No sustituye el manual del televisor.
+La interfaz está instalada. El asistente HOME se activó con autorización explícita; Google TV permanece como HOME de sistema y su pantalla de inicio se redirige a la nueva interfaz. Consulta ASISTENTE_HOME.md para entender el alcance y la reversión. No sustituye el manual del televisor.
 
 ## Pantalla de inicio
 
 Arriba a la izquierda aparecen saludo, hora y fecha. Arriba a la derecha están **Entradas**, **red**, **temporizador** y **Ajustes**. Debajo aparece la tarjeta de Millonarios FC. La fila principal contiene, en orden: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video.
 
-Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior; por ahora HOME regresa al inicio original de Google TV. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
+Usa las flechas del mando para moverte. **Solo el elemento seleccionado tiene el resaltado azul**. Pulsa OK para abrirlo. Atrás vuelve a la pantalla anterior; HOME muestra la nueva interfaz mediante el asistente. Al desactivarlo, HOME vuelve a Google TV. Los fondos propios de los logotipos, como el azul de Prime Video, forman parte del icono original.
 
 Desplázate a la derecha en la fila para encontrar las demás aplicaciones y la biblioteca; ocultar un icono no desinstala la aplicación. Los menús de fábrica no deben utilizarse.
 

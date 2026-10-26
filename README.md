@@ -17,11 +17,13 @@ Adaptación personal de [cleanyourtv](https://github.com/Gathin23/cleanyourtv), 
 ## Documentación
 
 - [Manual de usuario](MANUAL_USUARIO.md).
+- [Alcance y reversión del asistente HOME](ASISTENTE_HOME.md).
 - [Checklist obligatorio de validación](CHECKLIST_VALIDACION.md).
 - [Recursos de terceros](RECURSOS_TERCEROS.md).
 - [Diferencias respecto al original](CAMBIOS_RESPECTO_AL_ORIGINAL.md).
 - [Hardware verificado](HARDWARE.md).
 - [Validaciones y límites](VALIDACIONES.md).
+- [Medición de las seis apps](PERFORMANCE_APPS.md).
 - [Recuperación](RECUPERACION.md).
 - [Publicación y privacidad](PUBLICACION.md).
 - [Prueba de dos días](PRUEBA_DOS_DIAS.md).
