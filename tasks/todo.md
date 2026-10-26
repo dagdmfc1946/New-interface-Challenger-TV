@@ -8,7 +8,8 @@
 - [x] Vista previa de candidata disponible para aprobación (fotograma en opción 3; pulsos simulados en la alternativa).
 - [x] MANUAL_USUARIO.md, cambios, recuperación y publicación preparados.
 - [x] Aprobación de apariencia por el usuario.
-- [x] Instalación de candidata definitiva.
+- [x] Instalación de candidata definitiva y actualización visual posterior.
+- [x] Checklist obligatorio preparado, reordenamiento confirmado y acceso al temporizador comprobado.
 - [ ] Integración de HOME: firmware conserva Google TV; asistente opcional pendiente.
 - [ ] Validación con mando, voz, HDMI, TDT, apps y salvapantallas.
 - [ ] Prueba de uso de dos días.

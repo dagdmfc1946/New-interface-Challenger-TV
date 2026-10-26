@@ -61,3 +61,13 @@ Se reprodujo el error del saludo de España: a las 20:30 de Colombia la base seg
 El firmware expone `android.tv.settings.SLEEP_TIMER_HOT_KEY`, resuelta a `com.android.tv.settings/com.realtek.tv.settings.activity.SleepTimerHotKeyActivity`. Se abrió el panel original Tiempo de dormir con intervalos de 15, 30, 45, 60, 90 y 120 minutos. No se seleccionó ningún tiempo ni se programó apagado. El botón reutiliza esa acción y no añade un servicio, alarma ni permiso; falta comprobar su acceso desde la nueva versión y el apagado real bajo supervisión.
 
 El propietario confirmó que pudo reorganizar las aplicaciones. La actualización debe conservar su orden. No se continuarán intercambios técnicos sobre su orden personal. La activación de accesibilidad permanece pendiente de autorización explícita: la solicitud de explicación adicional no equivale a permiso.
+
+## Resultado de la actualización visual instalada
+
+La versión final de este ajuste pasó **267 pruebas en 42 suites**, sin fallos, errores ni omisiones. Lint: 0 errores y 92 advertencias, incluidas etiquetas nuevas aún sin traducción a otros idiomas de la base. No se añadieron supresiones ni se rebajaron criterios. Hash y tamaño del APK en VERIFICACION_COMPILACION.json; el hash leído en el TV coincide con el compilado.
+
+Se observó el saludo de noche y su nombre configurable, guardado solo en preferencias locales y conservado al detener/reabrir la app. Se comprobaron iconos ampliados con esquinas redondeadas, escudo más grande y cercano al texto, y línea secundaria menor. Las capturas personalizadas permanecen privadas.
+
+El botón de temporizador abrió la actividad nativa desde la interfaz y Atrás la cerró. Durante ese panel desapareció el cliente del reproductor local en `dumpsys media.player`; antes del panel usaba el decodificador Realtek. No se programó apagado. El orden personal de apps se conserva tras la actualización. El propietario confirmó el reordenamiento con su mando.
+
+El asistente HOME sigue desactivado. Preparación, pruebas simuladas y compilación no equivalen a activación ni a validación del servicio real. No se marca HOME, voz, TDT, HDMI, salvapantallas o ensayo de dos días como aprobados por estos cambios visuales.

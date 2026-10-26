@@ -8,5 +8,5 @@
   "lint_warnings": 92,
   "apk_bytes": 9339350,
   "apk_sha256": "d095cbbae52f3cc74ebb20fe228659996109d4e9de6545a176847355d9a1f938",
-  "runtime_tv_validation": "Temporizador y saludo nocturno comprobados. Iconos ampliados/redondeados y perfil local de saludo compilados; asistente HOME sin activar."
+  "runtime_tv_validation": "Actualización visual instalada y observada; saludo local persistente, temporizador nativo y hash comprobados. Asistente HOME sin activar, permiso explícito pendiente."
 }

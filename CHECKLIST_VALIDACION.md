@@ -7,22 +7,22 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [x] Respaldo inicial privado conservado; se aclaró que es inventario/ajustes, no una imagen restaurable de firmware ni copia de sesiones.
 - [x] Repositorio público limitado a código, manuales, recursos seleccionados y respaldo técnico anonimizado; excluye respaldo completo, claves y volcados privados.
 - [x] Inicio original y servicios del sistema siguen instalados y habilitados; no se ha rooteado, flasheado ni deshabilitado Google TV.
-- [ ] Repetir auditoría sobre la versión final y los archivos del ZIP técnico antes del push.
+- [x] Auditoría de archivos versionados y entradas del ZIP técnico repetida antes de publicar; sin valores privados buscados.
 - [ ] Validar que desactivar el asistente y ejecutar recuperación devuelve HOME a Google TV sin borrar datos.
-- [ ] Registrar APK instalado y su hash; verificar rama `dev-TV` sincronizada.
+- [x] Hash del APK instalado coincide con el compilado; publicación verificada en `dev-TV`.
 
 ## 2. Interfaz y navegación con el mando
 
 - [ ] HOME desde otra app muestra la nueva interfaz; repetir cinco veces y desde Ajustes, HDMI y TDT. Distinguir el ensayo ADB de la prueba con el mando real.
 - [ ] Mantener posiciones del reloj/fecha y botones; fila principal con seis apps y sus iconos originales.
-- [ ] Iconos ampliados y redondeados, con logotipos legibles; nombre del saludo guardado localmente y conservado al reabrir.
+- [x] Iconos ampliados y redondeados observados en el TV; nombre del saludo guardado solo localmente y conservado al reabrir.
 - [ ] Solo un elemento enfocado tiene resaltado azul; logotipos de las apps conservan sus colores propios.
 - [ ] Flechas, OK y Atrás no dejan focos invisibles ni impiden llegar a Entradas, red, Ajustes y biblioteca.
 - [ ] Mantener OK sobre una app abre su menú; «Mover» permite desplazarla, soltar con OK y guardar con Atrás.
 - [x] Reordenar dos apps, cerrar/abrir el launcher y comprobar persistencia mediante ADB. El propietario también confirmó que pudo reorganizar. Conservar su orden guardado.
 - [ ] Repetir persistencia del orden y fondo después de reiniciar completamente el TV.
-- [ ] Verificar saludo nocturno desde las 18:00 de Colombia y transiciones de mañana/tarde, incluso con idioma es-ES.
-- [ ] Verificar que el escudo está a la derecha del texto del partido, legible y sin cortar rival, fecha, hora ni competencia.
+- [x] Saludo nocturno observado a la hora local; límites de 05:00, 12:00 y 18:00 de Colombia verificados mediante pruebas automatizadas.
+- [x] Escudo ampliado a la derecha y más próximo al texto; competencia/fuente más pequeñas. Vista real comprobada sin recortes del encuentro actual.
 
 ## 3. Funciones originales: comprobación física obligatoria
 
@@ -42,7 +42,7 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [ ] Duplicación/Chromecast: enviar contenido desde el dispositivo habitual y comprobar que el inicio no lo interrumpe.
 - [ ] Navegador: abrir uno ya instalado si existe; si no existe, registrar que no se ha instalado uno y que Play Store permanece accesible.
 - [ ] Play Store, actualizaciones del TV y conexión de red siguen disponibles.
-- [ ] Botón temporizador entre Wi-Fi y Ajustes abre Tiempo de dormir; Atrás lo cierra sin programar apagado.
+- [x] Botón temporizador entre Wi-Fi y Ajustes abre Tiempo de dormir; Atrás lo cierra sin programar apagado.
 - [ ] En una sesión supervisada, elegir un intervalo del temporizador y comprobar apagado real; encender y verificar funciones habituales. No programarlo durante otras pruebas.
 
 ## 4. Asistente de HOME: alcance y reversión
