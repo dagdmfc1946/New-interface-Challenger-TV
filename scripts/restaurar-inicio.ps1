@@ -3,6 +3,7 @@ $ErrorActionPreference='Stop'
 $serial="${TvHost}:5555"
 & $Adb connect $serial
 if($LASTEXITCODE -ne 0){throw 'Sin conexión ADB'}
+& (Join-Path $PSScriptRoot 'asistente-home.ps1') -TvHost $TvHost -Adb $Adb -Desactivar
 & $Adb -s $serial shell 'cmd package set-home-activity --user 0 com.google.android.apps.tv.launcherx/.home.HomeActivity'
 if($LASTEXITCODE -ne 0){throw 'No se pudo restaurar HOME'}
 & $Adb -s $serial shell 'input keyevent KEYCODE_HOME'

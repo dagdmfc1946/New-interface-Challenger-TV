@@ -26,3 +26,9 @@ La consulta deportiva es la única red añadida por esta personalización. El re
 ## Qué todavía no se puede dar por validado
 
 El launcher definitivo no ha sustituido HOME. Las pruebas de rendimiento previas no incluyen la candidata integrada y su tarjeta. Faltan las comprobaciones reales del mando, voz, HDMI/TDT, persistencia del modo, pausa del fondo, salvapantallas, recuperación y uso durante dos días. Cada resultado se documentará sin convertir una intención en una prueba realizada.
+
+## Ajuste posterior: HOME, orden y escudo
+
+El propietario autorizó preparar la integración necesaria tras comprobar que HOME continuaba abriendo Google TV. Se configura `HomeKeyService` para observar exclusivamente cambios de ventana de Google TV y redirigir solo sus actividades HOME. Se desactiva el filtrado de teclas y la recuperación automática del servicio. El permiso de accesibilidad es un cambio explícito respecto al estado original; voz, salvapantallas y demás servicios deben conservarse.
+
+Se habilita el menú de las apps para acceder a «Mover» y guardar su orden. Se añade una imagen local estática del escudo a la derecha de la agenda; la tarjeta se amplía hacia la izquierda, conservando su anclaje superior derecho. No se cambia la posición del reloj ni de los botones.

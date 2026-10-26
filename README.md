@@ -10,13 +10,15 @@ Adaptación personal de [cleanyourtv](https://github.com/Gathin23/cleanyourtv), 
 - Alternativas: Digital y microchips con corriente suave (~15 fps), y la misma imagen estática.
 - Seis apps: YouTube, Netflix, Xuper, HBO Max, YouTube Music y Prime Video. Se usan sus iconos de Android, no copias incluidas en el repositorio.
 - Solo la app enfocada tiene resaltado azul. Saludo/reloj/fecha a la izquierda; Entradas/red/Ajustes a la derecha.
-- Ajustes conserva el panel original del TV. El menú propio permite cambiar fondos.
+- Ajustes conserva el panel original del TV. El menú propio permite cambiar fondos; mantener OK sobre una app permite moverla.
 - Tarjeta de Millonarios FC debajo de los botones: agenda del club, hora de Colombia, caché, sin sondeo continuo.
 - Se conservan TDT, HDMI, voz, Bluetooth/infrarrojos, duplicación, Play Store, actualizaciones y salvapantallas existentes.
 
 ## Documentación
 
 - [Manual de usuario](MANUAL_USUARIO.md).
+- [Checklist obligatorio de validación](CHECKLIST_VALIDACION.md).
+- [Recursos de terceros](RECURSOS_TERCEROS.md).
 - [Diferencias respecto al original](CAMBIOS_RESPECTO_AL_ORIGINAL.md).
 - [Hardware verificado](HARDWARE.md).
 - [Validaciones y límites](VALIDACIONES.md).

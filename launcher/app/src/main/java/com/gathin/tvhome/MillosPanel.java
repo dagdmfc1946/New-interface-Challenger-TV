@@ -17,9 +17,13 @@ final class MillosPanel {
     final TextView text;final SharedPreferences cache;final ExecutorService worker=Executors.newSingleThreadExecutor();
     boolean active,closed;volatile boolean loading;
     MillosPanel(Context context,FrameLayout root){cache=context.getSharedPreferences("millos_cache",0);float dp=context.getResources().getDisplayMetrics().density;
-        text=new TextView(context);text.setTextColor(Color.WHITE);text.setTextSize(14);text.setPadding((int)(14*dp),(int)(10*dp),(int)(14*dp),(int)(10*dp));text.setFocusable(false);text.setMaxLines(5);text.setShadowLayer(2*dp,0,dp,Color.BLACK);
-        GradientDrawable bg=new GradientDrawable();bg.setColor(0xDF10273D);bg.setCornerRadius(12*dp);text.setBackground(bg);
-        FrameLayout.LayoutParams p=new FrameLayout.LayoutParams((int)(270*dp),-2,Gravity.TOP|Gravity.END);p.topMargin=(int)(96*dp);p.rightMargin=(int)(58*dp);root.addView(text,p);render();}
+        LinearLayout panel=new LinearLayout(context);panel.setOrientation(LinearLayout.HORIZONTAL);panel.setGravity(Gravity.CENTER_VERTICAL);panel.setFocusable(false);panel.setPadding((int)(14*dp),(int)(10*dp),(int)(14*dp),(int)(10*dp));
+        text=new TextView(context);text.setTextColor(Color.WHITE);text.setTextSize(14);text.setFocusable(false);text.setMaxLines(6);text.setShadowLayer(2*dp,0,dp,Color.BLACK);
+        panel.addView(text,new LinearLayout.LayoutParams(0,-2,1));
+        ImageView crest=new ImageView(context);crest.setImageResource(R.drawable.millonarios_crest);crest.setScaleType(ImageView.ScaleType.FIT_CENTER);crest.setFocusable(false);crest.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        LinearLayout.LayoutParams logo=new LinearLayout.LayoutParams((int)(48*dp),(int)(48*dp));logo.leftMargin=(int)(12*dp);panel.addView(crest,logo);
+        GradientDrawable bg=new GradientDrawable();bg.setColor(0xDF10273D);bg.setCornerRadius(12*dp);panel.setBackground(bg);
+        FrameLayout.LayoutParams p=new FrameLayout.LayoutParams((int)(330*dp),-2,Gravity.TOP|Gravity.END);p.topMargin=(int)(96*dp);p.rightMargin=(int)(58*dp);root.addView(panel,p);render();}
     void start(){active=true;render();long last=cache.getLong("attempt",0),ttl=cache.getBoolean("ok",false)?6*3600000L:30*60000L;if(loading||System.currentTimeMillis()-last<ttl)return;loading=true;cache.edit().putLong("attempt",System.currentTimeMillis()).apply();worker.execute(()->{
         HttpURLConnection c=null;boolean ok=false;try{
             c=(HttpURLConnection)new java.net.URL(URL).openConnection();c.setConnectTimeout(8000);c.setReadTimeout(8000);c.setInstanceFollowRedirects(false);c.setRequestProperty("User-Agent","ChallengerHome/1.0");if(c.getResponseCode()!=200)throw new IOException("agenda unavailable");

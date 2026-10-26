@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Keys only: no accessibilityEventTypes (0), so the system never calls into the launcher for
-     accessibility events, which both services ignore. Key filtering depends only on
-     flagRequestFilterKeyEvents and canRequestFilterKeyEvents, not on the event types.
-     stock_home_redirect is the exception: with it set, HomeKeyService adds typeWindowStateChanged at runtime. -->
+<!-- Challenger adaptation: observe only Google TV window changes. No key filtering or
+     window-content retrieval; the handler redirects only its registered HOME activities. -->
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:packageNames="com.google.android.apps.tv.launcherx"
     android:accessibilityFeedbackType="feedbackGeneric"
-    android:accessibilityFlags="flagRequestFilterKeyEvents"
-    android:canRequestFilterKeyEvents="true"
+    android:notificationTimeout="100"
+    android:canRetrieveWindowContent="false"
+    android:canRequestFilterKeyEvents="false"
     android:description="@string/home_key_description" />
