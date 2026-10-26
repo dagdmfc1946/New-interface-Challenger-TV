@@ -1,0 +1,14 @@
+{
+  "format": "technical-sanitized-backup-v1",
+  "sanitized_zip_sha256": "a10e032194d0d8737f012e719203b03326ec155596979ea74b800e9d67053daa",
+  "files": [
+    "LEEME.txt",
+    "packages-state.json",
+    "settings-recuperables.json",
+    "hardware.json",
+    "home-original.txt",
+    "packages-disabled.txt"
+  ],
+  "full_original_uploaded": false,
+  "accounts_network_identifiers_uploaded": false
+}

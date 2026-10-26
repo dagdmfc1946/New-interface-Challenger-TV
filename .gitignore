@@ -1,0 +1,16 @@
+.gradle/
+**/.gradle/
+**/build/
+**/local.properties
+*.apk
+*.aab
+*.jks
+*.keystore
+adbkey*
+backup/
+backups/
+private/
+*.mp4
+!launcher/app/src/main/assets/video3.mp4
+*.aesgcm
+*clave*.json

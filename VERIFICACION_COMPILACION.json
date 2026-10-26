@@ -1,0 +1,12 @@
+{
+  "tests": 263,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": 41,
+  "lint_errors": 0,
+  "lint_warnings": 91,
+  "apk_bytes": 9322398,
+  "apk_sha256": "0afcd73cd62ad1a8969a5b8a5d4ad60193fc6ee631341abdb0e85f819eaf4277",
+  "runtime_tv_validation": "Publicación autorizada; instalación posterior pendiente"
+}
