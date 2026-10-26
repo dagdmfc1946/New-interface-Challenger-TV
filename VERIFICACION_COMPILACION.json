@@ -6,7 +6,7 @@
   "suites": 42,
   "lint_errors": 0,
   "lint_warnings": 91,
-  "apk_bytes": 9339398,
-  "apk_sha256": "c7f0e1e5719af0d85cc66b5aa1e9ced667a1d0b5255a83a182930e133d3cbb46",
-  "runtime_tv_validation": "HOME ya activado y primera redirección confirmada; medición de seis apps en curso."
+  "apk_bytes": 9339418,
+  "apk_sha256": "b046e24cdcb896cf660be5ce966b2bf5a1e5e70ad243ac71742be02820f6c2fc",
+  "runtime_tv_validation": "HOME activo, reversión y reinicio comprobados; ampliación final de cabecera compilada."
 }

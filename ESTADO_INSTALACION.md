@@ -14,4 +14,4 @@ Fecha: 25 de octubre de 2026 (Colombia).
 - Android resuelve Ajustes al panel original; este puede solicitar verificación del perfil de Google. No se accedió a la cuenta ni se modificó su verificación.
 - Ensayo de dos días y validación física del mando, micrófono, HDMI, TDT y salvapantallas: pendientes.
 
-La redirección práctica de HOME está activa; falta confirmar el botón con el mando físico, arranque y uso prolongado. Netflix mostró un panel de acceso de Google que debe gestionar personalmente el propietario.
+La redirección práctica de HOME está activa; reinicio y aparición automática comprobados; falta confirmar el botón con el mando físico y completar uso prolongado. Netflix mostró un panel de acceso de Google que debe gestionar personalmente el propietario.

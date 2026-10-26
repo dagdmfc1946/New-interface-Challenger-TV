@@ -38,3 +38,5 @@ El botón de temporizador es un acceso nuevo al panel original del firmware, no 
 La fila amplía los iconos del 62 % al 76 % de la altura de la tarjeta y recorta sus esquinas con radio de 8 dp; no se añaden copias de logotipos ni fondos azules permanentes. El saludo admite un nombre editable, guardado exclusivamente en preferencias locales (`challenger_profile`), separado de la configuración pública. El valor público inicial permanece vacío.
 
 Ajuste solicitado de legibilidad: saludo de 18 sp en negrilla; selección azul translúcida (15–20 % de opacidad); escudo de 68 dp, más próximo al texto, dentro de la misma tarjeta de 330 × 86 dp. Competencia y fuente quedan menores y en azul gris claro. No se añadió una animación ni una consulta de red por estos cambios.
+
+El propietario solicitó ampliar todo el bloque superior izquierdo: saludo de 22 sp con negrilla de sistema, reloj de 72 sp y día/fecha de 20 sp. La negrilla usa una familia de sistema para evitar que la variante del tipo variable se muestre demasiado fina. Botones y tarjeta deportiva conservan sus anclajes.

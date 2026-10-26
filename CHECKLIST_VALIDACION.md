@@ -8,12 +8,13 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [x] Repositorio público limitado a código, manuales, recursos seleccionados y respaldo técnico anonimizado; excluye respaldo completo, claves y volcados privados.
 - [x] Inicio original y servicios del sistema siguen instalados y habilitados; no se ha rooteado, flasheado ni deshabilitado Google TV.
 - [x] Auditoría de archivos versionados y entradas del ZIP técnico repetida antes de publicar; sin valores privados buscados.
-- [ ] Validar que desactivar el asistente y ejecutar recuperación devuelve HOME a Google TV sin borrar datos.
+- [x] Desactivar el asistente devolvió HOME a Google TV sin borrar datos; reactivación comprobada y arranque inicial corregido.
 - [x] Hash del APK instalado coincide con el compilado; publicación verificada en `dev-TV`.
 
 ## 2. Interfaz y navegación con el mando
 
-- [ ] HOME desde otra app muestra la nueva interfaz; repetir cinco veces y desde Ajustes, HDMI y TDT. Distinguir el ensayo ADB de la prueba con el mando real.
+- [x] Doce regresos ADB desde las seis apps mostraron la nueva interfaz.
+- [ ] Confirmar HOME con mando real, HDMI, TDT y Ajustes; la prueba ADB no sustituye esas comprobaciones.
 - [ ] Mantener posiciones del reloj/fecha y botones; fila principal con seis apps y sus iconos originales.
 - [x] Iconos ampliados y redondeados observados en el TV; nombre del saludo guardado solo localmente y conservado al reabrir.
 - [ ] Solo un elemento enfocado tiene resaltado azul; logotipos de las apps conservan sus colores propios.
@@ -47,12 +48,13 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 
 ## 4. Asistente de HOME: alcance y reversión
 
-- [ ] Activar solo `HomeKeyService`, preservando otros servicios de accesibilidad.
-- [ ] Confirmar eventos limitados a cambios de ventana de Google TV; sin lectura de contenido, captura de pantalla ni filtrado de teclas.
-- [ ] Confirmar que no se concedieron ubicación ni escritura de ajustes seguros a la app.
-- [ ] Verificar que no redirige verificación de cuenta, ajustes, voz, salvapantallas, reproducción, HDMI ni TDT por estar abiertos.
-- [ ] Desactivar el asistente: HOME vuelve a Google TV; reactivarlo solo si el ensayo es correcto.
-- [ ] Reinicio completo: asistente permanece habilitado y no deja al TV bloqueado o reiniciándose.
+- [x] Activado solo HomeKeyService con autorización explícita; otros servicios preservados.
+- [x] XML y servicio enlazado comprobados: solo cambios de ventana de Google TV, capacidades adicionales 0; sin lectura de contenido ni filtrado de teclas.
+- [x] La activación no concedió ubicación ni escritura de ajustes seguros a la app.
+- [x] No interrumpió el panel nativo del temporizador ni el panel de acceso de Google observado en Netflix.
+- [ ] Confirmar con uso físico voz, salvapantallas, reproducción, HDMI, TDT y otros ajustes.
+- [x] Desactivación devolvió HOME a Google TV; reactivación dejó la nueva interfaz visible.
+- [x] Reinicio completo: asistente siguió habilitado y la nueva interfaz apareció sin abrirla desde el PC.
 - [ ] Si se fuerza la detención o falla el servicio, Google TV sigue siendo utilizable; la recuperación manual está documentada.
 
 ## 5. Fondos, consumo y reposo
@@ -60,7 +62,7 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 - [ ] Opción 3 ocupa la pantalla, reproduce en bucle sin sonido y no muestra saltos molestos en su unión.
 - [ ] Corriente suave y estático se pueden seleccionar desde Ajustes del inicio; elección conservada al reabrir.
 - [ ] Al abrir otra app o Ajustes se libera el reproductor del fondo; al regresar se reanuda.
-- [ ] Medición breve de CPU, memoria, cuadros UI y decodificador con opción 3 y asistente activo; no confundir cuadros UI con cuadros del video.
+- [x] CPU y memoria medidas con asistente apagado/encendido en el mismo APK; seis apps, liberación de video y retornos HOME documentados en PERFORMANCE_APPS.md. Los pocos cuadros UI no certifican fluidez sostenida.
 - [ ] Dejar reposar sin pulsar teclas: aparece el salvapantallas original al tiempo habitual; salir con el mando y volver al inicio.
 - [ ] Suspensión y reactivación conservan sonido, red, control y fuente de entrada; sin pantalla siempre encendida forzada.
 - [ ] Comprobar sesiones continuas de reproducción y retorno al inicio durante dos días; comparar con estático si aparece lentitud.

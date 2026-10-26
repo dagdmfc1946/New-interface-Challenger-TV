@@ -79,3 +79,11 @@ Tras autorización explícita, se activó HomeKeyService sin conceder a la app u
 Los resultados de apertura, CPU y PSS están en PERFORMANCE_APPS.md. Netflix llegó a una actividad de acceso asistido de Google; no se introdujeron credenciales. YouTube Music redirigió a YouTube. No se confunden esos casos con apps listas para reproducir. El video del launcher no permaneció activo durante las muestras de las apps y no se detectó CPU de su proceso en esas ventanas. Se mantienen pendientes reproducción prolongada y pruebas físicas.
 
 Se corrigió también la presencia del temporizador en una variante heredada de layout y se usa negrilla estándar sin atributo dependiente de Android 9; no se cambió el idioma del TV ni la disposición española elegida. Las verificaciones finales y el hash corresponden a VERIFICACION_COMPILACION.json.
+
+## Persistencia de HOME y reversión real
+
+Se desactivó el asistente: HOME mostró Google TV. Netflix mostró el mismo panel de acceso asistido con el inicio original, por lo que no se atribuye ese panel a la redirección. Se reactivó con el script corregido y cinco recorridos temporizador → HOME fueron correctos; el temporizador permaneció visible hasta pulsar HOME. Voz y salvapantallas consultables y lista de paquetes deshabilitados coincidieron con el estado anterior.
+
+Después de un reinicio normal se reconectó ADB y se observó la nueva interfaz sin lanzar la app desde el PC. HomeKeyService permaneció habilitado. La primera comprobación de conexión agotó un timeout mientras arrancaba; el reintento confirmó el estado, sin cambiar la red ni la configuración ADB del TV.
+
+La ampliación posterior de saludo, reloj y fecha afecta solo a recursos de presentación. Las seis aperturas de PERFORMANCE_APPS.md se midieron con la misma opción 3 y la misma lógica del asistente antes de ese ajuste tipográfico; no se presenta una repetición de esos ensayos sobre cada APK de estilos.

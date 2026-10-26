@@ -10,7 +10,7 @@
 - [x] Aprobación de apariencia por el usuario.
 - [x] Instalación de candidata definitiva y actualización visual posterior.
 - [x] Checklist obligatorio preparado, reordenamiento confirmado y acceso al temporizador comprobado.
-- [ ] Integración de HOME: firmware conserva Google TV; asistente opcional pendiente.
+- [x] Integración práctica de HOME mediante asistente autorizado; Google TV conservado y reversión comprobada.
 - [ ] Validación con mando, voz, HDMI, TDT, apps y salvapantallas.
 - [ ] Prueba de uso de dos días.
 

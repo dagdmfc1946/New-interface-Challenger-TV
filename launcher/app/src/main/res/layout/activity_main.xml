@@ -184,8 +184,8 @@
                     android:ellipsize="end"
                     android:layout_marginStart="4dp"
                     android:textColor="#E6FFFFFF"
-                    android:textSize="18sp"
-                    android:fontFamily="@string/font_body"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif"
                     android:textStyle="bold"
                     android:letterSpacing="0.04"
                     android:textAllCaps="false" />
@@ -203,7 +203,7 @@
                         android:format12Hour="h:mm"
                         android:format24Hour="HH:mm"
                         android:textColor="#FFFFFFFF"
-                        android:textSize="52sp"
+                        android:textSize="72sp"
                         android:fontFamily="@string/font_light"
                         android:letterSpacing="-0.04"
                         android:includeFontPadding="false" />
@@ -267,10 +267,10 @@
                             android:ellipsize="end"
                             android:format12Hour="@string/date_format_home"
                             android:format24Hour="@string/date_format_home"
-                            android:textColor="#A6FFFFFF"
-                            android:textSize="14sp"
+                            android:textColor="#D9FFFFFF"
+                            android:textSize="20sp"
                             android:fontFamily="@string/font_regular"
-                            android:letterSpacing="0.14"
+                            android:letterSpacing="0.06"
                             android:textAllCaps="true" />
 
                         <!-- Lunar date ("Lunar 13/9 · Year of the Horse"), shown when lunar_date is on. -->

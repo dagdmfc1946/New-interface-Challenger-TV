@@ -97,4 +97,4 @@ El inicio de Google TV se deja instalado y habilitado. Puede seleccionarse desde
 
 ## Último ajuste de legibilidad
 
-El saludo usa 18 sp y negrilla. El marco de selección mantiene el azul con relleno de aproximadamente 15–20 % de opacidad y un borde visible; los iconos quedan legibles debajo. La tarjeta de Millonarios conserva 330 × 86 dp, con escudo de 68 dp desplazado hacia el texto. Competencia y fuente usan el 74 % del tamaño principal y un tono azul gris claro.
+El bloque superior izquierdo usa saludo de 22 sp en negrilla, reloj de 72 sp y día/fecha de 20 sp. El marco de selección mantiene el azul con relleno de aproximadamente 15–20 % de opacidad y un borde visible; los iconos quedan legibles debajo. La tarjeta de Millonarios conserva 330 × 86 dp, con escudo de 68 dp desplazado hacia el texto. Competencia y fuente usan el 74 % del tamaño principal y un tono azul gris claro.
