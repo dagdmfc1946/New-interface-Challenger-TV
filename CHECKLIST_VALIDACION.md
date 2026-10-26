@@ -15,9 +15,9 @@ Fecha de preparación: 25 de octubre de 2026 (Colombia). Responsable técnico: a
 
 - [x] Doce regresos ADB desde las seis apps mostraron la nueva interfaz.
 - [ ] Confirmar HOME con mando real, HDMI, TDT y Ajustes; la prueba ADB no sustituye esas comprobaciones.
-- [ ] Mantener posiciones del reloj/fecha y botones; fila principal con seis apps y sus iconos originales.
+- [x] Bloque izquierdo ampliado por solicitud, sin recortes observados; botones y tarjeta mantienen anclajes, fila con seis iconos originales.
 - [x] Iconos ampliados y redondeados observados en el TV; nombre del saludo guardado solo localmente y conservado al reabrir.
-- [ ] Solo un elemento enfocado tiene resaltado azul; logotipos de las apps conservan sus colores propios.
+- [x] Resaltado único azul translúcido comprobado en captura; logotipos visibles y conservados.
 - [ ] Flechas, OK y Atrás no dejan focos invisibles ni impiden llegar a Entradas, red, Ajustes y biblioteca.
 - [ ] Mantener OK sobre una app abre su menú; «Mover» permite desplazarla, soltar con OK y guardar con Atrás.
 - [x] Reordenar dos apps, cerrar/abrir el launcher y comprobar persistencia mediante ADB. El propietario también confirmó que pudo reorganizar. Conservar su orden guardado.

@@ -4,7 +4,7 @@ Fecha: 25 de octubre de 2026 (Colombia).
 
 - Publicado en la rama `dev-TV`; sin modificar `main`.
 - Interfaz actualizada e instalada con opción 3, iconos ampliados/redondeados, orden guardado y tarjeta deportiva con escudo y línea secundaria menor.
-- Saludo nocturno colombiano y nombre local configurados y conservados al reabrir; el nombre y capturas personalizadas no se publican.
+- Cabecera ampliada: saludo de 22 sp en negrilla, reloj 72 sp y día/fecha 20 sp; saludo nocturno colombiano y nombre local conservados al reabrir; el nombre y capturas personalizadas no se publican.
 - Botón de temporizador entre red y Ajustes: abre el panel original y permite salir sin programar un apagado.
 - Corriente suave e imagen estática incluidas como alternativas; cambio de modo y persistencia pendientes de prueba funcional.
 - Google TV permanece instalado, habilitado y como HOME efectivo: el firmware le da prioridad incluso después de `set-home-activity` y del gestor de roles.
